@@ -1,0 +1,32 @@
+<!--This view was added in step 15 of Wlkthrough and represent nested views-->
+
+<mvc:View
+   controllerName="sap.ui.demo.walkthrough.controller.HelloPanel"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Panel
+                  headerText="{i18n>helloPanelTitle}"
+                  class="sapUiResponsiveMargin"
+						width="auto">
+                  <content> <!--This part was added in step 11 of Walkthrough-->
+    <Button
+         id="helloDialogButton"
+         text="{i18n>openDialogButtonText}"
+         icon="sap-icon://world"
+         press=".onOpenDialog"
+         class="sapUiSmallMarginEnd"/> <!--Button added for fragment calls - step 16 Walkthrough-->
+   <Button
+      text="{i18n>showHelloButtonText}"
+      press=".onShowHello"
+      class="myCustomButton"/>
+   <Input
+      value="{/recipient/name}"
+      valueLiveUpdate="true"
+      width="60%"/>
+      <FormattedText
+									htmlText="Hello {/recipient/name}"
+									class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+
+       </content> <!--This part was added in step 11 of Walkthrough-->
+               </Panel>
+</mvc:View>

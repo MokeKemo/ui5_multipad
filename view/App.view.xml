@@ -1,0 +1,49 @@
+<!--<mvc:View
+   controllerName="sap.ui.demo.walkthrough.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Button
+      text="Say Hello"
+      press=".onShowHello"/>
+</mvc:View--> <!--STEP 6 IN WALKTHROUGH--> 
+
+<!--mvc:View
+   controllerName="sap.ui.demo.walkthrough.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Button
+      text="Say Hello"
+      press=".onShowHello"/>
+   <Input
+      value="{/recipient/name}"
+      description="Hello {/recipient/name}"
+      valueLiveUpdate="true"
+      width="60%"/>
+</mvc:View--> <!--STEP 7 WALKTHROUGH-->
+
+<mvc:View
+   controllerName="sap.ui.demo.walkthrough.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   displayBlock="true">
+   <Shell>
+         <App class="myAppDemoWT" id="app"/>
+   <!--App class="myAppDemoWT"--> <!--This part was added in step 11 of Walkthrough-->
+      <!--pages>
+         <Page title="{i18n>homePageTitle}">
+
+            <headerContent>
+						<Button
+							icon="sap-icon://hello-world"
+							press=".onOpenDialog"/>
+					</headerContent>
+
+            <content>
+               <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.HelloPanel"/>
+               <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.InvoiceList"/>
+            </content>
+         </Page>
+      </pages>
+   </App--> <!--This part was added in step 11 of Walkthrough-->
+   </Shell> <!--Shell added in step 12-->
+</mvc:View> <!--THIS WAS ADDED FIRST - FROM WALKTHROUGH-->

@@ -1,0 +1,52 @@
+{
+"TileCollection" : [
+    {
+        "id":"1",
+        "routeTo" : "overview",
+        "icon" : "thumb-up",
+        "title" : "Proba",
+        "info" : "Overview",
+        "infoState" : "Success"
+    },
+    {
+        "id":"2",
+        "routeTo" : "taking",
+          "icon" : "",
+          "title" : "Zaprimanje stalnog sredstva",
+          "info" : "Zaprimanje",
+          "infoState" : "Success"
+    },
+    {
+        "id":"3",
+        "routeTo" : "invlistCreate",
+        "icon" : "",
+        "title" : "Izrada popisne liste",
+        "info" : "Popisne liste",
+        "infoState" : "Success"
+    },
+    {
+        "id":"4",
+        "routeTo" : "invlist",
+        "icon" : "",
+        "title" : "Popis stalnih sredstava",
+        "info" : "Inventura",
+        "infoState" : "Success"
+    },
+    {
+        "id":"5",
+        "routeTo" : "scrape",
+        "icon" : "",
+        "title" : "Otpis stalnih sredstava",
+        "info" : "Otpis",
+        "infoState" : "Success"
+    },
+    {
+        "id":"6",
+        "routeTo" : "checkasset",
+        "icon" : "",
+        "title" : "Provjera stalnog sredstva",
+        "info" : "Trenutno stanje",
+        "infoState" : "Success"
+    }	
+]	
+}

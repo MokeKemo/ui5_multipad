@@ -1,0 +1,36 @@
+<mvc:View
+	controllerName="sap.ui.demo.walkthrough.controller.Repository"
+	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m"
+	xmlns:semantic="sap.m.semantic"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		class="homePage"
+		id="page"
+		title="{i18n>title.home}"
+		showHeader="true"
+		enableScrolling="true">
+		<content>
+			<l:HorizontalLayout allowWrapping="true" content="{lang>/TileCollection}" >
+				<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+							 ariaLabel="{lang>routeTo}"
+							 header="{parts:[{path:'lang>id'}], formatter:'.formatter.tileTitle'}" 
+							 subheader="{parts:[{path:'lang>id'}], formatter:'.formatter.infoTitle'}"
+							 press="onTileClick"
+							 visible="true"
+							 >
+					<tileContent>
+						<TileContent unit="">
+							<ImageContent src="sap-icon://{lang>icon}" />
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+			</l:HorizontalLayout>
+		</content>
+		<footer>
+			<OverflowToolbar>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</mvc:View>
